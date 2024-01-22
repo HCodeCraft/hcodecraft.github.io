@@ -17,10 +17,10 @@ body {
   background: url("../images/friendlycoding.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -34,7 +34,7 @@ body {
 
 .main-box {
   background: rgba(222, 237, 230, 0.8);
-  margin-top: 10%;
+  margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
   border: 10%;
@@ -47,7 +47,7 @@ body {
 .pos_cen {
   position: absolute;
   width: 70%;
-  left:10%;
+  left: 10%;
   /* top:20%; */
 }
 
@@ -62,7 +62,7 @@ body {
 
 .navbar a::before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   top: 100%;
   left: 0;
   width: 0%;
@@ -84,7 +84,7 @@ body {
   font-size: 45px;
   margin-bottom: 0.5em;
   color: #17a2b8;
-left:20%;
+  left: 20%;
 }
 
 .name {
@@ -98,22 +98,31 @@ left:20%;
 
 .main-text {
   font-size: 28px;
-  margin-top:5%;
-  padding:10px;
+  margin-top: 5%;
+  padding: 10px;
 }
 
 .img_deg {
   float: left;
   border-radius: 100%;
-    border: 6px solid #BACECBff;
-    margin-bottom:0.5em;
+  border: 6px solid #bacecbff;
+  margin-bottom: 0.5em;
 }
 
-.skills{
-  margin-top:2.5em;
-    font-size: 45px;
+.skills {
+  margin-top: 2.5em;
+  font-size: 45px;
   margin-bottom: 0.5em;
   color: #17a2b8;
-display:flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.video{
+  width:500px;
+float:right;
+}
+
+.marg-b1{
+margin-bottom:1em;
 }
