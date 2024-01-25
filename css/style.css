@@ -156,8 +156,9 @@ body {
 
 .proj-box {
   margin-bottom: 2em;
-  height: 400px;
+  height: 350px;
   padding: 15px;
+  position:relative;
 }
 
 .features {
@@ -165,9 +166,16 @@ body {
 }
 
 .pill-container {
+  position: absolute; /* Set the position of .pill-container to absolute */
+  bottom: 0; /* Align the .pill-container to the bottom */
+  /* transform: translateY(10%); Move it upwards by its own height */
+}
+
+/* .pill-container {
   display: flex;
   flex-wrap: wrap;
-}
+align-self:flex-end
+} */
 
 .pill {
   background-color: hsla(195, 36%, 72%, 1);
@@ -228,3 +236,68 @@ body {
   text-align: center;
   display: block;
 }
+
+.work-experience {
+  margin-top: 30px;
+}
+
+.job {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+background-color: hsla(0, 0%, 97%, 0.4);
+
+}
+
+.job h3 {
+  font-size: 2em; /* Larger font size */
+  margin-bottom: 5px;
+  color: hsla(200, 38%, 43%, 1); /* Text color */
+}
+
+.company {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size:1.2em;
+}
+
+.date {
+  font-weight: bold;
+  color: #333;
+    font-size:1.2em;
+}
+
+.responsibilities {
+  margin-top: 10px;
+  padding-left: 20px;
+    font-size:1.3em;
+  list-style: inside disc; /* Align the list dots inside the text */
+}
+
+.responsibilities li {
+  margin-top:2%;
+  margin-bottom: 2%;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .job {
+    padding: 15px;
+  }
+}
+
+.contact{
+    display: flex;
+flex-direction:column;
+align-items: center;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Vertically center-align items */
+    margin-bottom: 20px; 
+}
+
+
