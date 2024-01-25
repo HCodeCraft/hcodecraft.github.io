@@ -41,7 +41,8 @@ body {
   margin-right: 5%;
  border: 5px solid rgba(68, 125, 153, 0.7);
 
-  padding: 2%;
+padding: 0 2% 2% 2%;
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -113,7 +114,7 @@ body {
 }
 
 .skills {
-  margin-top: 2.5em;
+  margin-top: 0.5em;
   font-size: 45px;
   margin-bottom: 0.5em;
   color: #17a2b8;
@@ -128,7 +129,7 @@ body {
 }
 
 .currently-learning {
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: 45px;
   margin-bottom: 0.5em;
   color: #17a2b8;
@@ -152,6 +153,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height:100px;
 }
 
 .proj-box {
@@ -166,16 +168,11 @@ body {
 }
 
 .pill-container {
-  position: absolute; /* Set the position of .pill-container to absolute */
-  bottom: 0; /* Align the .pill-container to the bottom */
-  /* transform: translateY(10%); Move it upwards by its own height */
+  position: absolute;
+  bottom: 0; 
 }
 
-/* .pill-container {
-  display: flex;
-  flex-wrap: wrap;
-align-self:flex-end
-} */
+
 
 .pill {
   background-color: hsla(195, 36%, 72%, 1);
@@ -212,7 +209,7 @@ align-self:flex-end
 }
 
 .b {
-  color: #d28e9fff;
+ color: #17a2b8;
 }
 
 .desc {
@@ -243,16 +240,16 @@ align-self:flex-end
 
 .job {
   margin-bottom: 30px;
-  border: 1px solid #ccc;
+  border: 3px solid #878787;
   padding: 20px;
 background-color: hsla(0, 0%, 97%, 0.4);
 
 }
 
 .job h3 {
-  font-size: 2em; /* Larger font size */
+  font-size: 2em;
   margin-bottom: 5px;
-  color: hsla(200, 38%, 43%, 1); /* Text color */
+ color: #17a2b8;
 }
 
 .company {
@@ -272,7 +269,7 @@ background-color: hsla(0, 0%, 97%, 0.4);
   margin-top: 10px;
   padding-left: 20px;
     font-size:1.3em;
-  list-style: inside disc; /* Align the list dots inside the text */
+  list-style: inside disc;
 }
 
 .responsibilities li {
@@ -280,7 +277,6 @@ background-color: hsla(0, 0%, 97%, 0.4);
   margin-bottom: 2%;
 }
 
-/* Media Query for Responsiveness */
 @media (max-width: 768px) {
   .job {
     padding: 15px;
@@ -296,8 +292,33 @@ align-items: center;
 
 .contact-item {
     display: flex;
-    align-items: center; /* Vertically center-align items */
+    align-items: center; 
     margin-bottom: 20px; 
+}
+
+.intro-box{
+
+  margin-bottom: 30px;
+  border: 3px solid #878787;
+  padding: 20px;
+  padding-bottom:100px;
+background-color: hsla(0, 0%, 97%, 0.4);
+
+
+}
+
+.skill-box{
+  margin-bottom: 30px;
+  border: 3px solid #878787;
+padding-bottom:30px;
+background-color: hsla(0, 0%, 97%, 0.4);
+}
+
+.learn-box{
+  margin-bottom: 10px;
+  border: 3px solid #878787;
+padding-bottom:30px;
+background-color: hsla(0, 0%, 97%, 0.4);
 }
 
 
